@@ -3,6 +3,8 @@ FROM ubuntu:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
+RUN apt install python3
+
 RUN pip3 uninstall ffmpeg
 RUN pip3 uninstall mega
 RUN pip3 uninstall yt-dlp
