@@ -5,6 +5,7 @@ RUN chmod 777 /usr/src/app
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 uninstall ffmpeg
 RUN playwright install chromium
 RUN playwright install-deps
 RUN apt-get update && apt-get upgrade -y
