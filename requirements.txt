@@ -20,9 +20,7 @@ gunicorn
 lk21
 lxml
 markdown
-mediainfo
 pillow
-playwright
 psutil
 pybase64
 pycountry
