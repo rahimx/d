@@ -2,7 +2,6 @@ FROM alpine:latest
 
 WORKDIR /usr/src/app
 SHELL ["/bin/bash", "-c"]
-RUN chmod 777 /usr/src/app
 
 RUN apk-add -y update && DEBIAN_FRONTEND="noninteractive" \
     apk-add install -y apk-utils && DEBIAN_FRONTEND="noninteractive" \
