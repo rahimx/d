@@ -12,6 +12,7 @@ RUN pip3 uninstall speedtest-cli
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 uninstall -r requirements.txt
 RUN playwright install chromium
 RUN playwright install-deps
 RUN apt-get update && apt-get upgrade -y
