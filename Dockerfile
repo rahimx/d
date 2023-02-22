@@ -5,6 +5,10 @@ RUN chmod 777 /usr/src/app
 
 RUN pip3 uninstall ffmpeg
 RUN pip3 uninstall mega
+RUN pip3 uninstall yt-dlp
+RUN pip3 uninstall qbittorrent-api
+RUN pip3 uninstall megasdkrestclient
+RUN pip3 uninstall speedtest-cli
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
