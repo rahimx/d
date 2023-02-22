@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 SHELL ["/bin/bash", "-c"]
 RUN chmod 777 /usr/src/app
 
+RUN apt-get -y update
 RUN apt-get -y install python3
 RUN apt-get -y install python3-pip
 
